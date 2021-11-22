@@ -1,0 +1,33 @@
+.login-container {
+  width: 90%;
+  margin: auto;
+  padding: 40px 0 100px 0;
+}
+.title-main {
+  font-size: 19px;
+  font-weight: 700;
+}
+.tel-code-flex {
+  justify-content: space-between;
+}
+.tel-code-item1 {
+  width: 20%;
+}
+.tel-code-item2 {
+  width: 78%;
+}
+.tel-code {
+  padding: 10px;
+  border: 1px solid #6e6b6b;
+  border-radius: 5px;
+  display: inline;
+  color: #6e6b6b;
+}
+.tel-code-input {
+  border: none;
+}
+.checked-icon {
+  width: 15px;
+  height: 15px;
+  display: none;
+}

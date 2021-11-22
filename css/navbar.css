@@ -1,0 +1,139 @@
+:root {
+  --main: #3d9a85;
+}
+@font-face {
+  /* font-family: SegoeUI;
+	src: local("Segoe UI Light"),
+	  url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2)
+		format("woff2"),
+	  url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff)
+		format("woff"),
+	  url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf)
+		format("truetype"); */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: SegoeUI, sans-serif; */
+}
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.dropdown-menu-lang a,
+.dropdown-menu-lang a:active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+.navbar {
+  width: 100%;
+  height: 88px;
+  -webkit-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.39);
+}
+.numbernav {
+  width: 100%;
+  height: 32px;
+  /*background-color: pink;*/
+  display: flex;
+}
+.mainnav {
+  width: 100%;
+  height: 56px;
+  /*background-color: yellow;*/
+  display: flex;
+}
+.shopphone {
+  width: 135px;
+  height: 24px;
+
+  margin-top: 4px;
+  margin-left: 57%;
+  display: flex;
+}
+
+@media screen and (max-width: 345px) {
+  .shopphone {
+    margin-left: 54%;
+  }
+}
+.phoneicon {
+  background-image: url(../icons/ic-phone.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  margin-left: 7px;
+}
+.shopnumber {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #3d9a85;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+.menu {
+  background-image: url(../Icons/ic-menu.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-top: 16px;
+  margin-left: 18px;
+}
+.logo {
+  background-image: url(../Icons/LOGO.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 42px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 23px;
+}
+.threeicons {
+  display: flex;
+  margin-left: 31%;
+  margin-right: 3%;
+}
+.search {
+  background-image: url(../Icons/ic-search.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-top: 18px;
+}
+.user-check {
+  background-image: url(../Icons/ic-user-check.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-top: 18px;
+  margin-left: 20px;
+}
+.shopping-cart {
+  background-image: url(../Icons/ic_shopping-cart.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-top: 18px;
+  margin-left: 18px;
+}
+hr.new1 {
+  border-top: 1px solid rgba(153, 153, 153, 0.2);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

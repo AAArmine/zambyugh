@@ -55,6 +55,7 @@ $(".confirm-button").on("click", function () {
   $telVal = $("#initialLog").val();
   console.log($telVal);
 });
+// test
 
 //   $telVal = $("#initialLog").val();
 //   $.ajax({

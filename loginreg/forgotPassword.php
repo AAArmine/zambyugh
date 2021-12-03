@@ -12,11 +12,12 @@ if(isset($_SESSION['phone'])){
 include "../navbar.php";
 ?>
 <div class="login-container">
-<h1 class='title-main mt-5'>Մուտք/Գրանցում</h1>
+<a href="javascript:history.back()"><img src="../Icons/goBack.png" alt="goBack"></a>
+<h1 class='title-main mt-5'>Գաղտնաբառի վերականգնում</h1>
 <!-- <?php
 // setcookie('phone', null, -1, "/");
 ?> -->
-<p>Խնդրում ենք մուտքի կամ գրանցման համար մուտքագրել Ձեր բջջային հեռախոսահամարը</p>
+<p>Գաղտնաբառի վերականգման համար մուտքագրեք Ձեր հեռախոսահամարը և սեղմեք Վերականգնել: Դուք կստանաք կոդ ձեր հեռախոսահամարին։</p>
 <form>
   <div class='pt-5 small pb-1 tel-err-title'>Հեռախոսահամար</div>
   <div class='d-flex tel-code-flex'>

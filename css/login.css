@@ -28,13 +28,14 @@
 }
 .tel-code {
   padding: 10px;
-  border: 1px solid #6e6b6b;
+  border: 1px solid #999999;
   border-radius: 5px;
   display: inline;
   color: #6e6b6b;
 }
 .tel-code-input {
   border: none;
+  font-size: 12px;
 }
 .checked-icon {
   width: 15px;
@@ -52,6 +53,14 @@
   border-radius: 5px;
   color: white;
   background-color: var(--main);
+  box-shadow: 0px 5px 10px #333a395c;
+  transition: box-shadow 1s ease;
+}
+.confirm-button:hover {
+  box-shadow: none;
+}
+.confirm-button[disabled] {
+  box-shadow: none;
 }
 .modal-button {
   width: 80%;
@@ -140,8 +149,13 @@ input[type="checkbox"] {
 }
 .email-err-show,
 .pass-err-show,
-.number-error {
+.number-error,
+.home-err-show,
+.building-err-show,
+.entrance-err-show,
+.floor-err-show {
   color: red;
+  font-size: 12px;
 }
 .success-icon {
   width: 3rem;
@@ -152,11 +166,25 @@ input[type="checkbox"] {
 }
 .modal-content p {
   padding: 1.5rem 0 !important;
-  font-weight: 800;
+  font-weight: 500;
 }
 .forgot-password {
   color: #23527c;
   text-align: right;
+}
+.login-container p {
+  font-size: 14px;
+}
+.delivery-address {
+}
+.input-address {
+  width: 8.8rem;
+}
+.home-err-show,
+.building-err-show,
+.entrance-err-show,
+.floor-err-show {
+  width: 8.8rem;
 }
 @media screen and (max-width: 366px) {
   .tel-code-input {

@@ -51,29 +51,27 @@ $("#initialLog").keyup(function () {
     $(".checked-icon").animate({ opacity: "0" }, 300);
   }
 });
-$(".confirm-button").on("click", function () {
+$(".confirm-button").on("click", function (e) {
+  e.preventDefault();
+
   $telVal = $("#initialLog").val();
   console.log($telVal);
+  $.ajax({
+    type: "post",
+    url: "dataPasswordReset.php",
+    data: {
+      telVal: $telVal,
+    },
+    success: function (result) {
+      if (result == "noPhone") {
+        $(".number-error").html("Նշված հեռախոսահամարով տվյալներ չկան:");
+      } else {
+        setTimeout(function () {
+          window.location.href = "sendCodePassReset.php";
+        }, 500);
+      }
+      console.log(result);
+    },
+  });
 });
 // test
-
-//   $telVal = $("#initialLog").val();
-//   $.ajax({
-//     type: "post",
-//     url: "dataPasswordReset.php",
-//     data: {
-//       telVal: $telVal,
-//     },
-//     success: function (result) {
-//       if (result == "noPhone") {
-//         setTimeout(function () {
-//           window.location.href = "registration.php";
-//         }, 2000);
-//       } else {
-//         setTimeout(function () {
-//           window.location.href = "login.php";
-//         }, 2000);
-//       }
-//       console.log(result);
-//     },
-//   });

@@ -28,14 +28,60 @@ include "../navbar.php";
       <div><input id='email' class='tel-code-input' type="text" placeholder="Էլ․ հասցե"></div>
     </div>
     <div class='small email-err-show'></div>
-    <div class='pt-4 small pb-1'>Առաքման հասցե</div>
-    <div class='tel-code  d-flex justify-content-between'>
-      <div><input id='address' class='tel-code-input' type="text" placeholder="Առաքման հասցե"></div>
+
+    <div class='pt-4 delivery-address '>Առաքման հասցե</div>
+
+    <div class='pt-3 small pb-1 city-err-title'>Բնակավայր</div>
+    <div class='tel-code  city-err  d-flex justify-content-between'>
+      <div><input id='addressCity' class='tel-code-input' type="text" placeholder="Քաղաք, գյուղ"></div>
     </div>
-    <div class='small pb-1 pb-5'>Փողոց, շենք, բնակարան</div>
+
+    <div class='pt-3 small pb-1 street-err-title'>Փողոց</div>
+    <div class='tel-code  d-flex justify-content-between'>
+      <div><input id='addressStreet' class='tel-code-input' type="text" placeholder="Փողոց"></div>
+    </div>
+    <div class="d-flex justify-content-between">
+      <div>
+        <div class='pt-3 small pb-1 building-err-title'>Շենք</div>
+        <div class='tel-code building-err d-flex justify-content-between'>
+          <div><input id='addressBuilding' class='tel-code-input input-address' type="text" placeholder="Շենք"></div>
+        </div>
+        <div class='small building-err-show'></div>
+
+      </div>
+      
+      <div>
+        <div class='pt-3 small pb-1 entrance-err-title'>Մուտք</div>
+        <div class='tel-code entrance-err d-flex justify-content-between'>
+          <div><input id='addressEntrance' class='tel-code-input input-address' type="text" placeholder="Մուտք"></div>
+        </div>
+        <div class='small entrance-err-show'></div>
+
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between">
+      <div>
+        <div class='pt-3 small pb-1 floor-err-title'>Հարկ</div>
+        <div class='tel-code floor-err  d-flex justify-content-between'>
+          <div><input id='addressFloor' class='tel-code-input input-address' type="text" placeholder="Հարկ"></div>
+        </div>
+        <div class='small floor-err-show'></div>
+
+      </div>
+      <div>
+        <div class='pt-3 small pb-1 home-err-title'>Բնակարան/Տուն</div>
+        <div class='tel-code home-err  d-flex justify-content-between'>
+          <div><input id='addressHome' class='tel-code-input input-address' type="text" placeholder="Բնակարան/Տուն"></div>
+        </div>
+        <div class='small home-err-show'></div>
+
+      </div>
+    </div>
+    
 
 
-  <div class='d-flex pt-2 pb-4'>
+  <div class='d-flex mt-3 pt-5 pb-4'>
     <button class='confirm-button' disabled>Գրանցվել</button>  
   </div>
 
@@ -49,7 +95,7 @@ include "../navbar.php";
         Շնորհավորում ենք Դուք հաջողությամբ գրանցվել եք Զամբյուղ հարթակ
         </p>
         <div class="">
-          <a href='home.php'><button type="button" class="modal-button confirm-button " data-dismiss="modal">Կատարել գնումներ</button></a>
+          <a href='home.php'><button type="button" class="modal-button confirm-button ">Կատարել գնումներ</button></a>
         </div>
       </div>
     </div>
